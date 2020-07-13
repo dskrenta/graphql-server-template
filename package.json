@@ -1,0 +1,33 @@
+{
+  "name": "graphql-server-template",
+  "version": "1.0.0",
+  "description": "Apollo GraphQL Server Template",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node --optimize_for_size --max_old_space_size=2147 --gc_interval=100 server/index.js",
+    "dev": "./node_modules/nodemon/bin/nodemon.js --watch ./ server/index.js",
+    "build": "zip -r deploy.zip ./ -x 'node_modules/*' -x '.env' -x '.git/*'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dskrenta/graphql-server-template.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dskrenta/graphql-server-template/issues"
+  },
+  "homepage": "https://github.com/dskrenta/graphql-server-template#readme",
+  "dependencies": {
+    "apollo-server-express": "^2.15.1",
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql": "^15.3.0",
+    "jwt-simple": "^0.5.6",
+    "nodemon": "^2.0.4",
+    "pg": "^8.3.0"
+  }
+}
