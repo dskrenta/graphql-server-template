@@ -7,7 +7,7 @@ $ npm install
 $ cp .env.keep .env
 ```
 
-Fill in environment variables in `.env`
+Fill in environment variables in `.env` file
 
 ## Development
 ```
