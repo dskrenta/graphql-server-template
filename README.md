@@ -16,4 +16,4 @@ $ npm run deploy
 ```
 
 ### Apollo Client
-[https://www.apollographql.com/docs/react/](https://www.apollographql.com/docs/react/]
+[https://www.apollographql.com/docs/react/](https://www.apollographql.com/docs/react/)
