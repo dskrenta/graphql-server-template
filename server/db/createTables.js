@@ -14,6 +14,8 @@ const createTablesQuery = `
 
 async function createTables() {
   try {
+    const client = pgClient()
+    
     const res = await client.query(createTablesQuery)
 
     console.log(res)
