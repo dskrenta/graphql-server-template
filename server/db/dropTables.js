@@ -8,6 +8,8 @@ const dropTablesQuery = `
 
 async function dropTables() {
   try {
+    const client = pgClient()
+    
     const res = await client.query(dropTablesQuery)
 
     console.log(res)
